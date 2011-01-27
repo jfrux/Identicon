@@ -1,0 +1,17 @@
+IDENTICON CFC
+========
+
+Installation
+------------------
+
+- Copy the identicon.cfc file into your webroot.
+- Create the object in your application scope or by itself to demo it.
+
+    <cfset identicon = createObject("component","identicon").init() />
+
+And simply add it to your html img tag src like so...
+
+    <cfoutput>
+    <img src="#identicon.get_identicon(randomString,50,'absolute')#" />
+    </cfoutput>
+
